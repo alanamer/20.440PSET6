@@ -61,5 +61,7 @@ All of the code is in the `code/` folder:
 
 The generated figures are in the `figures/` folder:
 
-"Cardiac_muscle_contraction.png" displays the differentially expressed genes between iPSC-derived and Primary cardiomyocytes in the context of the cardiac muscle contraction KEGG pathway. "Vascular_smooth_muscle_contaction" displays the differentially expressed genes between iPSC-derived and Primary cardiomyocytes in the context of the vascular smooth muscle contraction KEGG pathway. "Top_20_GO" displays the top 20 differentially expressed GO pathways based on normalized enrichment score for iPSC-derived and primary cardiomyocytes. 
+"Cardiac_muscle_contraction.png" displays the differentially expressed genes between iPSC-derived and Primary cardiomyocytes in the context of the cardiac muscle contraction KEGG pathway. "Vascular_smooth_muscle_contaction" displays the differentially expressed genes between iPSC-derived and Primary cardiomyocytes in the context of the vascular smooth muscle contraction KEGG pathway. "Top_20_GO" displays the top 20 differentially expressed GO pathways based on normalized enrichment score for iPSC-derived and primary cardiomyocytes.
+
+*currently, only the cardiac muscle contraction will be saved as a png, but you can easily change the KEGG pid in the commented location to generate vascular smooth muscle contraction instead
 
