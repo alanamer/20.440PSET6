@@ -14,7 +14,7 @@ In vitro human organ models offer the potential for a more cost-effective and ef
 
 The repo contains three folders within main: data_files, code, and figures.
 
-data_files contains the tsv files of expression data used to generate the figures. code contains the jupyter notebook file that can be used to create the figures. figures contains the generated figures. 
+data_files contains the tsv files of expression data used to generate the figures. code contains the python file that can be used to create the figures. figures contains the generated figures. 
 
 ## Installing
 
