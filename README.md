@@ -2,7 +2,7 @@
 
 This repo contains the code to reproduce all of the analyses in "Meta analysis of microbiome studies identifies shared and disease-specific patterns", Duvallet et al. 2017.
 
-This repo contains the code to generate two graphs of differentially expressed genes in iPSC-derived vs. primary cardiomyocytes using transcriptome data from GSE146096 (Primary cardiomyocytes) and GSE226159 (iPSC-derived cardiomyocytes) from the NIH Gene Expression Omnibus (GEO) database. 
+This repo contains the code to generate two graphs of differentially expressed genes in iPSC-derived vs. primary cardiomyocytes using transcriptome data from GSE146096 (Primary cardiomyocytes, https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE146096) and GSE226159 (iPSC-derived cardiomyocytes, https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM7065927) from the NIH Gene Expression Omnibus (GEO) database. 
 
 RNA count normalization and differential expression analysis was performed using the DESeq2 implementation in Python (PyDESeq2), and we identified differentially expressed genes based on the criteria of adjusted p-value (FDR) > 0.05 and |log2 fold change| > 2. These differentially expressed genes were then passed to the package PyKEGG (https://pypi.org/project/pykegg/) which allows visualization of KEGG information using a network approach. 
 
@@ -41,4 +41,5 @@ All of the code is in the `code/` folder:
 #### figures 
 
 The generated figures are in the `figures` folder
+"Cardiac_muscle_contraction.png" displays the differentially expressed genes between iPSC-derived and Primary cardiomyocytes in the context of the cardiac muscle contraction KEGG pathway. "Vascular_smooth_muscle_contaction" displays the differentially expressed genes between iPSC-derived and Primary cardiomyocytes in the context of the vascular smooth muscle contraction KEGG pathway. "Top_20_GO" displays the top 20 differentially expressed GO pathways based on normalized enrichment score for iPSC-derived and primary cardiomyocytes. 
 
