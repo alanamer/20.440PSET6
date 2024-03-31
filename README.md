@@ -37,7 +37,9 @@ The repo contains three folders within main: data_files, code, and figures.
 
 data_files contains the tsv files of expression data used to generate the figures. code contains the python file that can be used to create the figures. figures contains the generated figures. 
 
-To reproduce the analyses, download the data_files folder and code file. Open these in the program of your choice; the method I used is google collab. Edit the file pathways for the data within the python file as needed for the locations you have placed them. Install the required packages described above. The code should then be able to run and generate the three figures.   
+To reproduce the analyses, download the data_files folder and code file. Open these in the program of your choice; the method I used is google collab. Edit the file pathways for the data within the python file as needed for the locations you have placed them. Install the required packages described above. You can then run the code and generate the three figures. The first two figures will use the transcriptome data from "MetaData_iPSCvsPrimary.tsv" (described below), and process it through DeSeq to obtain metrics for differential expression between the groups. This information will be passed to pyKEGG to generate "res.tsv" which contains the data necessary to plot the pathway map highlighting which genes are differentially expressed. The pathway number can be modified to whatever you wish, here I have chosen cardiac muscle contraction and vascular smooth muscle contraction for their relevance to the cell type. 
+
+The last figure, which is simply a plot of the top 20 GO pathways associated with differentailly expressed genes in iPSC-derived vs. primary cardiomyocytes can be obtained by pulling from the data file "OG_primary" which contains the GO pathways. This analysis was also completed in DeSeq. All you will need to do is modify the file path if necessary to produce the figure, as the data file already contains the GO pathways. 
 
 #### data
 
